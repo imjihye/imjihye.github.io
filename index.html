@@ -28,6 +28,8 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <style>
+    </style>
 </head>
 
 <body>
@@ -124,7 +126,9 @@
 
         <div class="row">
             <div class="box">
-                <div class="col-lg-12">
+                <div class="col-lg-2">
+                </div>
+                <div class="col-lg-8">
                     <hr>
                     <h2 class="intro-text text-center">
                         <strong>profile</strong>
@@ -132,7 +136,7 @@
                     <hr>
                     <!-- <img class="img-responsive img-border img-left" src="img/jihye.jpg" alt="">
                     <hr class="visible-xs"> -->
-                    <pre>
+                    <div class="intro">
                     이름 : 김지혜
                     성별 : 여자
                     직업 : 프론트 엔드 개발자
@@ -141,28 +145,33 @@
                     보유차량 : K3(이름은 엘리스)
                     특이사항 : SNS안함
                     하고 있는 운동 : 젠요가 
-                        (젠요가란? 스트레칭과 관절을 풀어주는 동작과 깊은 호흡으로 스트레스 해소와 집중력 향상에 도움이 되는 현대인의 힐링빈야사 요가)
-                    취미 : 네일아트 받기
+                    취미 : 네일아트 받기 / 수상스키 / 골프 / 수영
                     새로 생긴 취미 : 중국어 공부. 你好！
                     좋아하는 연예인 : 장위안
                     좋아하는 애니메이션 : 나루토 / 명탐정 코난
                     사용하는 개발 도구 : pycham / webstorm / sublime / ...
+                    </div>
                     관심사 : 
+                    <dir class='row'>
+                        <div class="col-md-9">
                         nginx, sphinx, django, wordpress, mongodb ...Django, bootstrap, Angularjs, Backbonejs, Emberjs,
                         Pyramid, Bottle, Nimble, Flask, Turbogears, rest api, web socket, jekyll, markdown,
-                        python, js, 
-                    해보고 싶은 것 :
-                        ? : 개발노트(단축키 정리 - vi, mac, sublime, pycharm / 언어별 - tutorial and coding convention, / etc - aws서비스)
-                        django website : diary(CRUD permissions) <a>http://128.199.214.194:8000/everyday/diaries/</a>
-                        wordpress website on LEMP stack: eating house menu <a>http://128.199.214.194:80/</a>
-                        php : <a>http://128.199.214.194:800/hello.php</a>
-                        nodejs
-                        golnag
-                        mongodb for storing log data
-                        highchart
-                        email : AWS SES
-
-                    </pre>
+                        python, js
+                        </div>
+                    </dir>
+                    해보고 싶은 것 : 
+                        <ul class='urls-list'>
+                        <li>? - 개발노트(단축키 정리 - vi, mac, sublime, pycharm / 언어별 - tutorial and coding convention, / etc - aws서비스)</li>
+                        <li>django website - diary(CRUD permissions) <a>http://128.199.214.194:8000/everyday/diaries/</a></li>
+                        <li>wordpress website on LEMP stack: eating house menu <a>http://128.199.214.194:80/</a></li>
+                        <li>php - <a>http://128.199.214.194:800/hello.php</a></li>
+                        <li>nodejs</li>
+                        <li>golnag</li>
+                        <li>mongodb for storing log data</li>
+                        <li>highchart</li>
+                        <li>email - AWS SES</li>
+                        </ul>
+                    </div>
                     <p>...</p>
                 </div>
             </div>
@@ -215,11 +224,27 @@
         interval: 5000 //changes the speed
     });
 
-    $('.urlss').each(function(el){
-        console.log(el);
+    var html ='';
+    $.each($('.intro').html().split('\n'), function(i, line){
+        html += line.replace(/^\s+/g, '<br />');
     });
+    $('.intro').html(html);
+    
+    // $('ul').split('\n'),
 
-    $('pre a').each(function(el){
+    // $('.intro').html($('.intro').text().replace(/\n/g, '<br />'));
+    // $('.intro').html($('.intro').text().replace(/\s+/g, ' '));
+
+    // var html = '<table>';
+    // $.each($('.intro').text().split('\n'), function(i, line){
+    // var line = line.split(' : ');
+    // console.log(line[1]);
+    //     html += '<tr><td>'+line[0]+'</td><td>'+line[1]+'</td></tr>'
+    // });
+    // html+='</table>'
+    //$('.intro').html(html);
+
+    $('.urls-list a').each(function(){
         var text = $(this).text();
         $(this).attr('target', '_blank').attr('href', text);
 
