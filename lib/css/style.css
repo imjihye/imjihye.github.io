@@ -13,19 +13,6 @@ header,footer {
 section {
     background-color:#fff;
 }
-nav ul  {
-    margin:0;padding:0;
-}
-nav ul li {
-    display:inline; margin:5px;
-}
 footer{
     text-align: center;
-}
-
-header .brand {
-    float: left;
-    width: 240px;
-    height: 80px;
-    position: relative;
 }
