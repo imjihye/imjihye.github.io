@@ -11,11 +11,11 @@
         "좋아하는 애니메이션": "나루토 & 명탐정 코난"
     },
     "project": {
-        "mypage": "im.jihye.me",
-        "board": "board.jihye-toy.me",
-        "chat": "board.jihye-toy.me",
-        "instagram": "instagram.jihye-toy.me",
-        "lotto": "lotto.jihye-toy.me",
-        "everydata": "everydata.jihye-toy.me"
+        "mypage": "http://im.jihye.me",
+        "board": "http://board.jihye-toy.me",
+        "chat": "http://board.jihye-toy.me",
+        "instagram": "http://instagram.jihye-toy.me",
+        "lotto": "http://lotto.jihye-toy.me",
+        "everydata": "http://everydata.jihye-toy.me"
     }
 }
