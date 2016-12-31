@@ -29,7 +29,7 @@
 
                 var html = '<dt>해본 것</dt><dd><ul>';
                 for(key in data.project){
-                    html += '<li><a href="'+data.project[key]+'"">' + data.project[key] + '</a></li>';
+                    html += '<li><a target="_blank" href="'+data.project[key]+'"">' + data.project[key] + '</a></li>';
                 }
                 $('#project').html(html+'</ul></dd>');
              },
