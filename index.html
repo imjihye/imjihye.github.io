@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -9,118 +9,42 @@
 
      <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css" integrity="sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="lib/css/style.css" >
+    <link rel="stylesheet" href="./public/css/base.css">
 </head>
 <body>
-<section>
-    <header>
-
-    <nav class="navbar navbar-light">
-        <a class="navbar-brand" href="#">JIHYE HOME</a>
-        <ul class="nav navbar-nav pull-xs-right">
-            <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="/test.html">Test</a></li>
-        </ul>
-    </nav>
-    </header>
-    <section class="content">
-    <div class="row">
-    <div class="col-md-12">
-        <h1> Im jihye</h1>
-        <img id="profile_picture" alt="Profile Picture" style="width:128px;height:128px">
-    </div>
-    <div class="col-md-3">
-        <dl>
-            <dt>이름</dt>
-            <dd>김지혜</dd>
-            <dt>성별</dt>
-            <dd>여자</dd>
-            <dt>직업</dt>
-            <dd>프론트 엔드 개발자</dd>
-            <dt>이메일</dt>
-            <dd>im@jihye.me</dd>
-            <dt>하고 있는 운동</dt>
-            <dd>젠요가</dd>
-            <dt>취미</dt>
-            <dd>네일아트 & 수상스키 & 골프 & 수영</dd>
-            <dt>새로생긴 취미</dt>
-            <dd>중국어 공부</dd>
-            <dt>좋아하는 연예인</dt>
-            <dd>장위안</dd>
-            <dt>좋아하는 애니메이션</dt>
-            <dd>나루토 & 명탐정 코난</dd>
-        </dl>
-    </div>
-    <div class="col-md-3">
-        <dl>
-            <dt>개발 관심사</dt>
-            <dd>
-                <ul>
-                <li>Angularjs</li>
-                <li>Backbonejs</li>
-                <li>Emberjs</li>
-                <li>React</li>
-                <li>ECMAScript6</li>
-                <li>markup</li>
-                <li>markdown</li>
-                <li>nodejs</li>
-                </ul>
-            </dd>
-            <dd>
-                <ul>
-                <li>django</li>
-                <li>wordpress</li>
-                <li>fablic</li>
-                <li>jekyll</li>
-                </ul>
-            </dd>
-        </dl>
-    </div>
-    <div class="col-md-6">
-        <dl>
-            <dt>해보고 싶은 것</dt>
-            <dd>
-                <ul>
-                <li>instagram API</li>
-                <li>wordpress web</li>
-                <li>React web</li>
-                <li>django web</li>
-                </ul>
-            </dd>
-        </dl>
-    </div>
-    <div class="col-md-6">
-        <dl>
-            <dt>해본 것</dt>
-            <dd><ul>
-                <li><a href="http://board.jihye-toy.me/">http://board.jihye-toy.me/</a></li>
-                <li><a href="http://instagram.jihye-toy.me/">http://instagram.jihye-toy.me/</a></li>
-                <li><a href="http://lotto.jihye-toy.me/">http://lotto.jihye-toy.me/</a></li>
-                <li><a href="http://login.jihye-toy.me/">http://login.jihye-toy.me/</a></li>
-                <li><a href="http://every.jihye-toy.me/">http://every.jihye-toy.me/</a></li>
-                </ul>
-            </dd>
-        </dl>
-    </div>
-    </div>
+    <section>
+        <header>
+            <nav class="navbar navbar-light">
+                <a href="http://im.jihye.me" class="navbar-brand">Jihye Home</a>
+            </nav>
+        </header>
+        <section class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="content">
+                        <div class="col-md-3">
+                            <h1> Im jihye</h1>
+                            <img id="imjh" alt="jh">
+                        </div>
+                        <div class="col-md-4">
+                            <dl id="jihye"></dl>
+                        </div>
+                        <div class="col-md-5">
+                            <dl id="project"></dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </section>
-    <aside>
-    </aside>
-</section>
 
-<footer>
-    <p>
-    Copyright 2016 &copy; 
-    All rights reserved. 
-    <a href="mailto:im@jihye.me">im@jihye.me</a></p>
-</footer>
-
-
-    <!-- jQuery first, then Tether, then Bootstrap JS. -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/js/bootstrap.min.js" integrity="sha384-ux8v3A6CPtOTqOzMKiuo3d/DomGaaClxFYdCu2HPMBEkf6x2xiDyJ7gkXU0MWwaD" crossorigin="anonymous"></script>
-    <script src="lib/js/mypage.js"></script>
-</body>
+    <footer>
+        <p>
+            Copyright 2016 &copy; 
+            All rights reserved. 
+            <a href="mailto:im@jihye.me">im@jihye.me</a>
+        </p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="./public/javascripts/mypage.js"></script>
 </html>
