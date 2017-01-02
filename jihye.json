@@ -12,8 +12,9 @@
     },
     "project": {
         "mypage": "http://im.jihye.me",
+        "chat": "http://chat.jihye-toy.me",
+
         "board": "http://board.jihye-toy.me",
-        "chat": "http://board.jihye-toy.me",
         "instagram": "http://instagram.jihye-toy.me",
         "lotto": "http://lotto.jihye-toy.me",
         "everydata": "http://everydata.jihye-toy.me"
